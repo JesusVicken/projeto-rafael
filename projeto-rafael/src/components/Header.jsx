@@ -17,29 +17,44 @@ export default function Header() {
         <header className="w-full border-b bg-background">
             <div className="flex items-center justify-between py-3 pl-2 pr-4">
                 {/* Logo */}
-                <Link to="/" className="text-xl font-bold text-blue-400 hover:text-blue-500 transition-colors">
-                    Chá de Fraudas Online
+                <Link
+                    to="/"
+                    className="text-xl font-bold text-cyan-500 hover:text-cyan-600 transition-colors"
+                >
+                    Chá de Fraldas Online
                 </Link>
 
                 {/* Menu Desktop */}
                 <nav className="hidden md:flex gap-6 text-sm font-medium">
-                    <Link to="/exemplos" className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
+                    <Link
+                        to="/exemplos"
+                        className="hover:bg-cyan-500 hover:text-white transition-all px-4 py-2 rounded-full"
+                    >
                         como funciona
                     </Link>
-                    <Link to="/planos" className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
+                    <Link
+                        to="/planos"
+                        className="hover:bg-cyan-500 hover:text-white transition-all px-4 py-2 rounded-full"
+                    >
                         planos
                     </Link>
-                    <Link to="/recursos" className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
+                    <Link
+                        to="/recursos"
+                        className="hover:bg-cyan-500 hover:text-white transition-all px-4 py-2 rounded-full"
+                    >
                         ajuda
                     </Link>
                 </nav>
 
                 {/* Ações Desktop */}
                 <div className="hidden md:flex items-center gap-2">
-                    <Button variant="ghost" className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
+                    <Button
+                        variant="ghost"
+                        className="hover:bg-cyan-500 hover:text-white transition-all px-4 py-2 rounded-full"
+                    >
                         meu chá
                     </Button>
-                    <Button className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
+                    <Button className="hover:bg-cyan-500 hover:text-white transition-all px-4 py-2 rounded-full">
                         Entrar
                     </Button>
                     <ThemeToggle />
@@ -64,7 +79,9 @@ export default function Header() {
                                 <Link to="/recursos">Ajuda</Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                                <Button variant="ghost" className="w-full justify-start">meu chá</Button>
+                                <Button variant="ghost" className="w-full justify-start">
+                                    meu chá
+                                </Button>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
                                 <Button className="w-full justify-start">Entrar</Button>
