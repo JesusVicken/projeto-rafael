@@ -17,7 +17,7 @@ export default function Header() {
         <header className="w-full border-b bg-background">
             <div className="container mx-auto flex items-center justify-between px-4 py-3">
                 {/* Logo */}
-                <Link to="/" className="text-xl font-bold text-primary">
+                <Link to="/" className="text-xl font-bold text-blue-300 hover:text-blue-500 transition-colors">
                     iFraudas
                 </Link>
 
@@ -36,8 +36,12 @@ export default function Header() {
 
                 {/* Ações Desktop */}
                 <div className="hidden md:flex items-center gap-2">
-                    <Button variant="ghost">meu iFraudas</Button>
-                    <Button>Entrar</Button>
+                    <Button variant="ghost" className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
+                        meu iFraudas
+                    </Button>
+                    <Button className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
+                        Entrar
+                    </Button>
 
                     {/* Botão de Troca de Tema no final */}
                     <ThemeToggle />
@@ -47,30 +51,35 @@ export default function Header() {
                 <div className="md:hidden">
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                            <Button variant="ghost" size="icon">
+                            <Button variant="ghost" size="icon" className="hover:bg-gray-200 transition-colors">
                                 <Menu className="h-5 w-5" />
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end" className="w-48">
                             <DropdownMenuItem asChild>
-                                <Link to="/exemplos">Exemplos Reais</Link>
+                                <Link to="/exemplos" className="hover:text-primary transition-colors">Exemplos Reais</Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                                <Link to="/planos">Planos</Link>
+                                <Link to="/planos" className="hover:text-primary transition-colors">Planos</Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                                <Link to="/recursos">Recursos</Link>
+                                <Link to="/recursos" className="hover:text-primary transition-colors">Recursos</Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                                <Button variant="ghost" className="w-full justify-start">Entrar</Button>
+                                <Button variant="ghost" className="w-full justify-start hover:bg-gray-200 transition-colors">
+                                    Entrar
+                                </Button>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                                <Button className="w-full justify-start">Criar site grátis</Button>
+                                <Button className="w-full justify-start hover:bg-gray-200 transition-colors">
+                                    Criar site grátis
+                                </Button>
                             </DropdownMenuItem>
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </div>
             </div>
         </header>
+
     )
 }
