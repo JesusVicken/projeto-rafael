@@ -18,7 +18,7 @@ export default function Header() {
             <div className="flex items-center justify-between py-3 pl-2 pr-4">
                 {/* Logo */}
                 <Link to="/" className="text-xl font-bold text-blue-400 hover:text-blue-500 transition-colors">
-                    Chá de Frauda Online
+                    Chá de Fraudas Online
                 </Link>
 
                 {/* Menu Desktop */}
