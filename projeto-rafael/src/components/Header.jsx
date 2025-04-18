@@ -23,15 +23,16 @@ export default function Header() {
 
                 {/* Menu Desktop */}
                 <nav className="hidden md:flex gap-6 text-sm font-medium">
-                    <Link to="/exemplos" className="hover:text-primary transition-colors">
+                    <Link to="/exemplos" className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
                         como funciona
                     </Link>
-                    <Link to="/planos" className="hover:text-primary transition-colors">
+                    <Link to="/planos" className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
                         planos
                     </Link>
-                    <Link to="/recursos" className="hover:text-primary transition-colors">
+                    <Link to="/recursos" className="hover:bg-blue-500 hover:text-white transition-all px-4 py-2 rounded-full">
                         ajuda
                     </Link>
+
                 </nav>
 
                 {/* Ações Desktop */}
