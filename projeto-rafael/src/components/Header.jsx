@@ -1,0 +1,76 @@
+import { Button } from "@/components/ui/button"
+import ThemeToggle from "./ThemeToggle"
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Menu } from "lucide-react"
+import { useState } from "react"
+import { Link } from "react-router-dom"
+
+export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    return (
+        <header className="w-full border-b bg-background">
+            <div className="container mx-auto flex items-center justify-between px-4 py-3">
+                {/* Logo */}
+                <Link to="/" className="text-xl font-bold text-primary">
+                    iFraudas
+                </Link>
+
+                {/* Menu Desktop */}
+                <nav className="hidden md:flex gap-6 text-sm font-medium">
+                    <Link to="/exemplos" className="hover:text-primary transition-colors">
+                        como funciona
+                    </Link>
+                    <Link to="/planos" className="hover:text-primary transition-colors">
+                        planos
+                    </Link>
+                    <Link to="/recursos" className="hover:text-primary transition-colors">
+                        ajuda
+                    </Link>
+                </nav>
+
+                {/* Ações Desktop */}
+                <div className="hidden md:flex items-center gap-2">
+                    <Button variant="ghost">meu iFraudas</Button>
+                    <Button>Entrar</Button>
+
+                    {/* Botão de Troca de Tema no final */}
+                    <ThemeToggle />
+                </div>
+
+                {/* Menu Mobile */}
+                <div className="md:hidden">
+                    <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                            <Button variant="ghost" size="icon">
+                                <Menu className="h-5 w-5" />
+                            </Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent align="end" className="w-48">
+                            <DropdownMenuItem asChild>
+                                <Link to="/exemplos">Exemplos Reais</Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <Link to="/planos">Planos</Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <Link to="/recursos">Recursos</Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <Button variant="ghost" className="w-full justify-start">Entrar</Button>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <Button className="w-full justify-start">Criar site grátis</Button>
+                            </DropdownMenuItem>
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+                </div>
+            </div>
+        </header>
+    )
+}
