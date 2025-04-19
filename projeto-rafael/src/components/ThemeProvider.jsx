@@ -4,7 +4,7 @@ export function ThemeProvider({ children }) {
     return (
         <NextThemesProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="light"
             enableSystem
         >
             {children}
