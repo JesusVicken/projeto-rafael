@@ -55,7 +55,7 @@ export default function Header() {
                         meu chá
                     </Button>
                     <Button className="hover:bg-cyan-500 hover:text-white transition-all px-4 py-2 rounded-full">
-                        Entrar
+                        começar agora
                     </Button>
                     <ThemeToggle />
                 </div>
@@ -84,7 +84,7 @@ export default function Header() {
                                 </Button>
                             </DropdownMenuItem>
                             <DropdownMenuItem asChild>
-                                <Button className="w-full justify-start">Entrar</Button>
+                                <Button className="w-full justify-start">começar agora</Button>
                             </DropdownMenuItem>
                         </DropdownMenuContent>
                     </DropdownMenu>
