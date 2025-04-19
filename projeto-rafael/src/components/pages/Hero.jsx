@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import HeroImage from "../../../public/hero.jpg"; // ajuste o caminho se necessário
+import HeroImage from "../../../public/hero.jpg"; 
 
 export default function Hero() {
     return (
@@ -11,7 +11,7 @@ export default function Hero() {
                     {/* Título explicativo acima */}
                     <div>
                         <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                            Como funciona o<span className="text-cyan-500"> Chá de Fraudas Online</span>
+                            Como funciona o<span className="text-cyan-500"> Chá de Fraldas Online</span>
                         </h2>
                         <p className="text-base md:text-lg text-muted-foreground mt-2">
                             Explicamos direitinho <span className="text-cyan-500 font-medium">como funciona cada tipo de evento do chá de bebê online</span> – chá de bebê ou chá de fraldas, chá revelação e chá rifa. Além claro, das vantagens e os recursos que oferecemos para as mamães criarem seus chás com a iFraldas.
