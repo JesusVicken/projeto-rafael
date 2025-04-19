@@ -11,7 +11,7 @@ export default function Hero() {
                     {/* Título explicativo acima */}
                     <div>
                         <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                            Como funciona o<span className="text-cyan-500"> chá de bebê online</span>
+                            Como funciona o<span className="text-cyan-500"> Chá de Fraudas Online</span>
                         </h2>
                         <p className="text-base md:text-lg text-muted-foreground mt-2">
                             Explicamos direitinho <span className="text-cyan-500 font-medium">como funciona cada tipo de evento do chá de bebê online</span> – chá de bebê ou chá de fraldas, chá revelação e chá rifa. Além claro, das vantagens e os recursos que oferecemos para as mamães criarem seus chás com a iFraldas.
@@ -21,7 +21,7 @@ export default function Hero() {
                     {/* Título principal */}
                     <div>
                         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground">
-                            O <span className="text-cyan-500">chá de bebê</span> é o queridinho!
+                            O <span className="text-cyan-500">chá de fraudas</span> é o queridinho!
                         </h1>
                         <p className="text-base md:text-lg text-muted-foreground mt-2">
                             Ele é o evento mais realizado. Seja com festa ou online, o chá de bebê é especial para comemorar a chegada do bebê e receber o apoio dos amigos e da família.
