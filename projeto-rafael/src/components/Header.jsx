@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button"
+import HeroImage1 from "../../public/logo1.png"
+
 import ThemeToggle from "./ThemeToggle"
 import {
     DropdownMenu,
@@ -15,14 +17,16 @@ export default function Header() {
 
     return (
         <header className="w-full border-b bg-background">
-            <div className="flex items-center justify-between py-3 pl-2 pr-4">
-                {/* Logo */}
-                <Link
-                    to="/"
-                    className="text-xl font-bold text-cyan-500 hover:text-cyan-600 transition-colors"
-                >
-                    Chá de Fraldas Online
+            <div className="flex items-center justify-between py-3 px-4">
+                {/* Logo como imagem */}
+                <Link to="/" className="flex items-center gap-2">
+                    <img
+                        src={HeroImage1}
+                        alt="Logo Chá de Fraldas Online"
+                        className="h-14 w-auto"
+                    />
                 </Link>
+
 
                 {/* Menu Desktop */}
                 <nav className="hidden md:flex gap-6 text-sm font-medium">
