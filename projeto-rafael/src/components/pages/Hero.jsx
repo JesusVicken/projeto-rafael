@@ -21,7 +21,7 @@ export default function Hero() {
                     {/* Título principal */}
                     <div>
                         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground">
-                            O <span className="text-cyan-500">chá de fraudas</span> é o queridinho!
+                            O <span className="text-cyan-500">chá de fraldas</span> é o queridinho!
                         </h1>
                         <p className="text-base md:text-lg text-muted-foreground mt-2">
                             Ele é o evento mais realizado. Seja com festa ou online, o chá de bebê é especial para comemorar a chegada do bebê e receber o apoio dos amigos e da família.
